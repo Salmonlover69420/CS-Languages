@@ -10,7 +10,7 @@ int main() {
 
         return 1;
     }
-    /* else { // can also just not nest using else {} since it isnt needed.
+    /* else { // can also not nest using else {} since it isn't needed.
         printf("The inverse of a is: %f", 1/a);
     }
     */
