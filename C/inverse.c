@@ -14,6 +14,8 @@ int main() {
         printf("The inverse of a is: %f", 1/a);
     }
     */
+    else
     printf("the inverse of a is: %f", 1/a);
+
     return 0;
 }
