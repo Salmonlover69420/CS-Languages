@@ -10,10 +10,11 @@ int main () {
     printf("2. Subtraction (-)\n");
     printf("3. Multiplication (*)\n");
     printf("4. Division (/)\n");
+    printf("5. Modulo of the two numbers (%)\n");
 
-    printf("Choose an operation (1 to 4): ");
+    printf("Choose an operation (1 to 5): ");
     scanf("%i", &op);
-    if ( op >= 1 && op <=4 ) {
+    if ( op >= 1 && op <=5 ) {
         switch(op) {
             case 1:
             printf("%i + %i = %i\n", a, b, a+b);
@@ -24,22 +25,36 @@ int main () {
             break;
             
             case 3:
-            printf("%i x %i = %i", a, b, a*b);
+            printf("%i x %i = %i\n", a, b, a*b);
             break;
 
             case 4:
-            if (b != 0 )
-            printf("%i / %i = %.2f\n", a, b, (float)a/b);
+            if ( b != 0 ) {
+                printf("%i / %i = %.2f\n", a, b, (float)a/b);
+            }
             else {
-                printf("Cannot divide by 0.");
+                printf("The second integer cannot be 0.");
 
                 return 1;
             }
+
             break;
+
+            case 5:
+            if (b != 0 ) {
+                printf("%i %% %i = %i\n", a, b, a%b);
+            }
+            else {
+                printf("The second integer cannot be 0.");
+
+                return 1;
+            }           
+            break;
+
         }
     }
     else {
-        printf("You must choose between 1 and 4.");
+        printf("You must choose between 1 and 5.\n");
 
         return 1;
     } 
