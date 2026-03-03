@@ -4,7 +4,7 @@ int main () {
     int A, B, C;
     float op;
 
-    printf("Enter 3 integers to compute (A*B)/2: ");
+    printf("Enter 3 integers to compute (A*B)/C: ");
     scanf("%i%i%i", &A, &B, &C);
     
     op = (float)(A*B)/C;
