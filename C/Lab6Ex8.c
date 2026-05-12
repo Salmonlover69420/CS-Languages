@@ -1,9 +1,9 @@
 // Lab 6, Ex 8
 
-# include <stdio.h>
+#include <stdio.h>
 
 int main () {
-    int T[200][100], S[100] i, j, Min, MinIndex;
+    int T[200][100], S[100], i, j, Min, MinIndex;
 
     printf("Enter elements of the array T: ");
     for ( i = 0; i < 200; i=i+1) {
@@ -13,7 +13,7 @@ int main () {
     }
 
     for ( j = 0; j < 100; j=j+1 ) {
-        S[j] = 0
+        S[j] = 0;
         for ( i = 0; i < 200; i=i+1 )
             S[j] = S[j] + T[i][j];
     }
