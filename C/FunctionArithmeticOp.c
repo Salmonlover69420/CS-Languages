@@ -4,7 +4,7 @@ Write a C program that performs basic arithmetic operations on two integers ente
 2. Prompt the user to choose an operation to perform: 
     1 for addition 
     2 for subtraction 
-    3 from multiplication 
+    3 for multiplication 
     4 for division 
 3. use a function named calculate that takes the two numbers and the chosen operation (an integer) as parameters. 
 This function must return the result of the chosen operation. 
