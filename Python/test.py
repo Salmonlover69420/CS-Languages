@@ -75,7 +75,7 @@ print (days[0]) # Prints the first item on the list (Monday) which is index 0
 
 ### Randomization
 # If you want to randomize the day chosen you do this:
-import random # Imports the random library that way you can use random shit
+import random # Imports the random library that way you can use random stuff
 
 random_day = random.choice(days)
 print (random_day) # Prints a random day from the list
