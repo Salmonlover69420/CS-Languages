@@ -1,8 +1,7 @@
 /*
 Write an iterative and recursive
 functions that calculates
-Sn =tab[0]+tab[1]+…+tab[n 1] where n is the
-elements number
+Sn = tab[0] + tab[1] + … + tab[n - 1] where n is the elements number
 */
 
 #include <iostream>
