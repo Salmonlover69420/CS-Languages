@@ -1,5 +1,5 @@
 print ("Hello World!")
-name = "Joe Mama" # String Variable
+name = "Joe" # String Variable
 number = 5 # Integer Variable
 meters = 1.5 # Floating Point Variable
 meters2 = 1.0 # Floating Point Variable
@@ -8,8 +8,8 @@ print (Meters2) # Py is case sensitive so meters2 and Meters2 are different vari
 print (name)
 print (number)
 
-word = 'poop'
-word2 = "pee" # These two are the same, you can use single or double quotes
+word = 'word1'
+word2 = "word2" # These two are the same, you can use single or double quotes
 paragraph = """i can even go to 
 another line""" # Only works for triple quotes
 print (word, word2, paragraph) # Prints them side by side except paragraph which goes down a line in the middle of it
@@ -18,9 +18,9 @@ print (word, word2, paragraph) # Prints them side by side except paragraph which
 Multi-line comment wowwwww
 '''
 
-day = "13/"
-month = "06/"
-year = "2007"
+day = "11/"
+month = "01/"
+year = "1900"
 
 print("My birthday is on", day + month + year) # doing print("My birthday is on", day,month,year) will add spaces and make it appear as My birthday is on 13/ 06/ 2007 so we use +
 
@@ -44,7 +44,7 @@ a=b=c=10 # You make them all have the same number but diff variables
 
 print(a,b,c)
 
-d, e, f = 1, 2, "Joe Mama"
+d, e, f = 1, 2, "Joe"
 print(d, e, f, sep="\n") # sep="\n" separate each one into a diff line
 
 ### Application of variables:
@@ -84,7 +84,7 @@ print (random.choice(days)) # Prints a random day from the list
 
 input("\n\nPress the enter key to exit") # Just makes you enter to a new line while in terminal
 
-import sys; x = 'poopoo'; sys.stdout.write(x + '\n') # Just to show that you can use ; to put RELATED code on the same line
+import sys; x = 'qwerty'; sys.stdout.write(x + '\n') # Just to show that you can use ; to put RELATED code on the same line
 
 ### Local Var
 # A local var is a var inside a function as such:
@@ -115,10 +115,10 @@ my_dog.bark() # Calls the bark which prints out woof
 # Example 2:
 class Math:
     def fail(self):
-        print("Haha fail")
+        print("Failed")
 
     def passed(self):
-        print("Wow I passed what a miracle")
+        print("Passed")
 
 me = Math()
 me.fail()
