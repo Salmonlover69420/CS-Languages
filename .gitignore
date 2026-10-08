@@ -1,3 +1,7 @@
 .vscode/tasks.json
 C++/Chapter 1/.vscode
 C++/Chapter 1/build
+*.exe
+*.json
+/C++/Chapter 1/build
+*.exe
