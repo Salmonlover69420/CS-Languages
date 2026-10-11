@@ -29,6 +29,8 @@ int main() {
     return 0;
 }
 
+// we must use void and not char since it allows us to print multiple characters
+
 void display_it(char tab[], int n) {
     for (int i = 0; i < n; i++)
         cout << tab[i] << " ";

@@ -5,3 +5,4 @@ C++/Chapter 1/build
 *.json
 /C++/Chapter 1/build
 *.exe
+C++/Chapter 1/build/Debug/outDebug.exe
