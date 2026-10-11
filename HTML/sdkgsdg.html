@@ -19,7 +19,7 @@
     <h1 id="h1ID"> h1</h1>
     <h6 align="center">h6 is the last one</h6>
 
-    <hr width="500" align="left">
+    <hr width="500" align="left"><br>
 
     <p>An example of <b>Bold Text</b> </p>
     <p>An example of <em>Emphasized </em> </p>
@@ -31,7 +31,7 @@
     <p>An example of <code>Computer Code Text</code></p>
     <center>Centering of <mark> text </mark> in page</center>
 
-    <hr width="500" align="left">
+    <hr width="500" align="left"><br>
 
     <ul type="square"> <!--square, disc, circle, etc-->
         <li>a</li>
@@ -53,7 +53,7 @@
         <dd>desc</dd>
     </dl>
 
-    <hr width="500" align="left">
+    <hr width="500" align="left"><br>
 
     <a href="https://www.google.com">google</a><br>
     <a href="https://www.google.com" target=_blank>google blank page (opens in new window/tab)</a><br>
@@ -64,7 +64,79 @@
 
     <img src="ImageIcon.png" width="100" height="100" alt="image failed to load"><br>
     <!--alt is used if image doesnt load-->
-    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5dnUiOOVtj8GOmjN4UNRUJW_lUkMcLjHkbKph108Vg&s=10"><img src="ImageIcon.png" width="100" height="100" alt="image failed to load"></a>
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5dnUiOOVtj8GOmjN4UNRUJW_lUkMcLjHkbKph108Vg&s=10"><img
+            src="ImageIcon.png" width="100" height="100" alt="image failed to load"></a>
+    <figure>
+        <img src="ImageIcon.png" width="100" height="100" alt="image failed to load">
+        <figcaption>figure caption</figcaption>
+    </figure>
+
+    <hr width="500" align="left"><br>
+
+    <table border="1" align="center">
+        <caption>Fruits</caption>
+        <tr>
+            <td>orange</td>
+            <td>apple</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <thead> <!--thead puts it at the top always-->
+            <tr>
+                <th>Fruit</th> <!--th makes them bold-->
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tfoot> <!--tfoot puts it at the bottom always-->
+            <tr>
+                <th>Total</th>
+                <th>$0.75</th>
+            </tr>
+        </tfoot>
+        <tbody> <!--tbody puts it at the middle always-->
+            <tr>
+                <td>Apple</td>
+                <td>$0.25</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>$0.50</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1"> <!--do not use thead tfoot tbody with rowspan and colspan since it doesnt render-->
+        <caption>Fruits</caption>
+        <tr>
+            <td rowspan=4>DATA</td>
+            <th>Fruit</th>
+            <th colspan=2>Price</th>
+        </tr>
+
+        <tr>
+            <td>Apple</td>
+            <td>25000</td>
+            <td>$0.25</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>50000</td>
+            <td>$0.50</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>75000</th>
+            <th>$0.75</th>
+        </tr>>
+    </table>
+
+    <hr width="500" align="left"><br>
+
     
 </body>
 
