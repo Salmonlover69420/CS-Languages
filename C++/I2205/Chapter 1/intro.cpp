@@ -32,6 +32,6 @@ int main() {
 
 void display(const vector<int> &v) {
     for (int i = 0; i < v.size(); i++) // or for (auto x:v)
-        cout << v[i] << " ";
+        cout << v[i] << " "; // and then x instead of v[i]
     cout << endl;
 }
