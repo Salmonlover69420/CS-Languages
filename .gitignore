@@ -3,6 +3,7 @@ C++/Chapter 1/.vscode
 C++/Chapter 1/build
 *.exe
 *.json
+*.o
 /C++/Chapter 1/build
 *.exe
 C++/Chapter 1/build/Debug/outDebug.exe
