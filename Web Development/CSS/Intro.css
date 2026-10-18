@@ -1,0 +1,24 @@
+/* 
+Format:
+selector {
+    property: value;
+    property: value;
+    ...
+    property: value;
+
+}
+*/
+/* NOTE:
+Suppose HTML code is <p>Hello world!</p> (paragraph tag)
+and the CSS is 
+p {
+    color: red;
+}
+(selector is called p, similar to paragraph tag)
+The selector p does not change the properties of <p>, but it adds all written properties in the selector to the tag
+*/
+
+p {
+    color: red;
+    size: 15px;
+}

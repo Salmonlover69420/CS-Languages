@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inputs</title>
+</head>
+
+<body>
+    <h1 style="color:blue">Input Types</h1>
+    This form demonstrates the HTML5 input types and the placeholder, required and autofocus attributes.
+    <form method="post" action="" autocomplete="on" novalidate> <!--novalidate doesnt validate inputted data-->
+        <p><label> Color:
+                <input name="color" type="color" size="20"></label> <!--size is the max amount of chars that can be written-->
+        </p>
+
+        <p><label> Date:
+                <input name="date" type="date"></label>
+        </p>
+
+        <p><label> Datetime-local:
+                <input name="datetime-local" type="datetime-local"></label>
+        </p>
+
+        <p><label> Number:
+                <input name="number" type="number" step="1" min="0" max="7" placeholder="0"></label>
+        </p>
+
+        <p><label> Range:
+                0
+                <input type="range" min="0" max="20" value="10">
+                20</label>
+        </p>
+
+        <p><label> Email:
+                <input name="email" type="email" placeholder="name@domain.com" required></label>
+        </p>
+
+        <p><label> Search:
+                <input name="search" type="search" placeholder="search query">
+                (Enter your search query here.)</label>
+        </p>
+
+        <p><label> Tel:
+                <input name="tel" type="tel" placeholder="(###) ###-####" pattern="\(\d{3}\) \d{3}-\d{4}" required>
+                <!--\ inputs the strings, d{3} sets for 3 integers, + concatenation-->
+                (###) ###-####</label>
+        </p>
+
+        <p><label> Time:
+                <input name="time" type="time">
+                (hh:mm)</label>
+        </p>
+
+        <p><label> URL:
+                <input name="url" type="url" placeholder="http://www.domainname.com">
+                (http://www.domainname.com)</label>
+        </p>
+
+        <p><label for="week"> Week: </label>
+            <input id="week" name="week" type="week">
+            <!-- since input isnt inside the label, we MUST add id and for so that they are connected in the backend-->
+        </p>
+
+        <P>
+            <label>Favorite Language: </label><br>
+            <label>
+                <!-- all 3 must have the same name so that you can only select one of them-->
+                <input name="Language" type="radio" value="HTML" checked> HTML</label><br>
+            <label>
+                <input name="Language" type="radio" value="JS"> JS</label><br>
+            <label>
+                <input name="Language" type="radio" value="CSS">CSS</label><br>
+        </p>
+
+        <P>
+            <label>Used colors: </label><br>
+            <label>
+                <!-- multiple checkboxes can be selected at once unlike radio -->
+                <input name="FavColor" type="checkbox" value="Green"> Green</label><br>
+            <label>
+                <input name="FavColor" type="checkbox" value="Blue"> Blue</label><br>
+            <label>
+                <input name="FavColor" type="checkbox" value="Red">Red</label><br>
+        </p>
+
+        <p>
+            <label for="car">Choose a car: </label>
+            <select id="car" name="car">
+                <option value="bmw">bmw</option>
+                <option value="audi" selected>audi</option>
+                <option value="toyota">toyota</option>
+            </select>
+        </p>
+
+        <p> <!--like select but user cant add to the datalist-->
+            <label for="seasons">Seasons:</label>
+            <input name="season" list="seasons" placeholder="Enter a Season"> <!--must have so that you can choose from datalist (this also lets you add to it)-->
+            <datalist id="seasons">
+                <option value="Summer">
+                <option value="Autumn">
+                <option value="Winter">
+                <option value="Spring">
+            </datalist>
+        </p>
+
+        <p>
+            <input value="Submit" type="submit" formnovalidate>  <!--formnovalidate allows user to enter nothing or invalid data and submit them-->
+            <input value="Clear" type="reset">
+        </p>
+    </form>
+
+    <details>
+        <summary> always visible and at the top </summary>
+        <!-- doesnt matter if put summary above to below, but must be inside details tag -->
+        <ul>
+            <li>iughegh</li>
+            <li>sdghfdg</li>
+        </ul>
+    </details>
+    <br>
+
+    <textarea name="comments" rows="10" cols="36" placeholder="User can type here"></textarea><br>
+
+    <button type="button">Click Me!</button><br>
+
+    <fieldset>
+        <legend>Name</legend>
+        <label for="fname">First name:</label><br>
+        <input id="fname" name="FirstName" type="text" placeholder="Enter your first name"><br>
+        <label for="lname">Last name:</label><br>
+        <input id="lname" name="LastName" type="text" placeholder="Enter your last name"><br>
+    </fieldset>
+
+</body>
+
+</html>
