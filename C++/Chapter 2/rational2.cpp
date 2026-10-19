@@ -9,7 +9,7 @@ struct rational {
 rational sum(rational r1, rational r2) {
     rational r;
     r.num = r1.num * r2.den + r1.den * r2.num;
-    r.den = r1.den*r2.den;
+    r.den = r1.den * r2.den;
     return r;
 }
 rational diff(rational r1, rational r2) {
@@ -43,10 +43,10 @@ int gcd(int a, int b) {
 
     return a;
 }
-void reduce(rational & r) {
+void reduce(rational& r) {
     int d = gcd(r.num, r.den);
-    r.num /=d;
-    r.den /=d;
+    r.num /= d;
+    r.den /= d;
 }
 void input(rational& r) {
     cout << "enter the numerator";
@@ -54,7 +54,7 @@ void input(rational& r) {
     do {
         cout << "enter the denominator";
         cin >> r.den;
-    }while(r.den == 0);
+    } while (r.den == 0);
 
 }
 void output(rational r) {
@@ -63,7 +63,7 @@ void output(rational r) {
         r.den = -r.den;
     }
     if (r.den == 1)
-        cout << r.num<<endl;
+        cout << r.num << endl;
     else
         cout << r.num << "/" << r.den << endl;
 }
