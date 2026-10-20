@@ -1,11 +1,7 @@
 /*
-A book is defined by :
-Title
-Author
-Editor
-Edition
-Cost
-Write a program that inputs the data relative to N  books and displays on the screen a menu offering the following choices :
+A book is defined by:
+Title, Author, Editor, Edition, and Cost
+Write a program that inputs the data relative to (with respect to) N books and displays on the screen a menu offering the following choices:
 1 - Display the titles of all the books written by a given author(Ask the user to input the author name)
 2 - Output the total cost of the books
 3 - Output the books of edition = 2
