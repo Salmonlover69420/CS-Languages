@@ -6,17 +6,17 @@ using namespace std;
 typedef vector<int> vi;
 typedef vector<vi> mi;
 
+// void display(mi& m) {
+//     for (int i = 0; i < m.size(); i++) {
+//         for (int j = 0; j < m[i].size(); j++) {
+//             cout << m[i][j] << " ";
+//         }
+//         cout << endl;
+//     }
+// }
 void display(mi& m) {
-    for (int i = 0; i < m.size();i++) {
-        for (int j = 0; j < m[i].size();j++) {
-            cout << m[i][j] << " ";
-        }
-        cout << endl;
-    }
-}
-void display2(mi& m) {
-    for (auto x : m) {
-        for (auto y : x) {
+    for (auto x:m) {
+        for (auto y:x) {
             cout << y << " ";
         }
         cout << endl;
@@ -36,10 +36,10 @@ int main() {
     };
 
 
-    display2(m);
+    display(m);
     vi color(n, -1);
 
-    for (int i = 0;i < m.size();i++) {
+    for (int i = 0; i < m.size(); i++) {
         coloring(m, i, color);
 
     }
@@ -57,7 +57,7 @@ int main() {
 
     cout << "xi= " << xi << endl;
 
-    for (auto x : color) {
+    for (auto x:color) {
         cout << x << " ";
     }
 
@@ -66,9 +66,9 @@ int main() {
 
 void coloring(mi& m, int i, vi& color) {
     bool valid;
-    for (int k = 0;k < m.size();k++) {
+    for (int k = 0; k < m.size(); k++) {
         valid = true;
-        for (int j = 0; j < m.size();j++) {
+        for (int j = 0; j < m.size(); j++) {
             if (m[i][j] != 0 && color[j] == k) {
                 valid = false;
                 break;
