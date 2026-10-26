@@ -1,1 +1,0 @@
-# Write a program that initializes a list then, for a specific element provided by the user, the program prints its frequency in the list.
