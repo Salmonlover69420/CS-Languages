@@ -1,0 +1,9 @@
+h1 {
+    text-shadow: 2px, 2px red; /* if 0 0 3px red  it does neon glow */
+}
+
+.h1 {
+    text-shadow: -2px, -2px red;
+}
+
+

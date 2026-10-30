@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Bug report form</title>
+</head>
+
+<body>
+    <form method="post">
+        <h1>Bug Report form</h1>
+        <fieldset>
+            <legend>Report</legend>
+            <label>
+                Name: <input name="Name" type="text"><br>
+            </label>
+            <br>
+            <label>
+                Email: <input name="Email" type="email"><br>
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Bug Details</legend>
+            <label>
+                Bug Title: <input name="BugTitle" type="text"><br>
+            </label>
+            <br>
+            <label> <!--check if bugged-->
+                Platforms: <input name="Platforms" type="radio"> Low
+                <input name="Platforms" type="radio" checked> Medium
+                <input name="Platforms" type="radio"> High
+                <input name="Platforms" type="radio"> Critical
+            </label>
+
+            <label> <!--check if bugged-->
+                Platforms: <input name="Platforms" type="checkbox"> Low
+                <input name="Platforms" type="checkbox"> Medium
+                <input name="Platforms" type="checkbox"> High
+                <input name="Platforms" type="checkbox"> Critical
+            </label>
+
+            <!--to do browser and down-->
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
