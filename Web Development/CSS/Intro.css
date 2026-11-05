@@ -18,6 +18,32 @@ p {
 The selector p does not change the properties of <p>, but it adds all written properties in the selector to the tag
 */
 
+/*
+Inline CSS:
+    <h1 style="color: red;"> FirstStyle </h1>
+
+Internal CSS:
+    <head>
+    .....
+        <style>
+            span {
+                color:blue;
+            }
+            h1 {
+                color: pink;
+                font-size: 24pt;
+            }
+        </style>
+    .....
+    </head>
+
+External CSS:
+    <head>
+        <title>...</title>
+        <link rel="stylesheet" href="style.css"> (style.css is a separate css file with all selectors in it)
+    </head>
+*/
+
 p {
     color: red;
     size: 15px;
