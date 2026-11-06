@@ -29,10 +29,10 @@ int main() {
     result = BinarySearch(pArray, low, high, x);
 
     if (result == -1) {
-        cout << "Number not found!";
+        cout << "Number not found!" << '\n';
     }
     else {
-        cout << "Found at index " << result;
+        cout << "Found at index " << result << '\n';
     }
 
     delete[] pArray;
