@@ -22,26 +22,65 @@
         <fieldset>
             <legend>Bug Details</legend>
             <label>
-                Bug Title: <input name="BugTitle" type="text"><br>
-            </label>
-            <br>
-            <label> <!--check if bugged-->
-                Platforms: <input name="Platforms" type="radio"> Low
-                <input name="Platforms" type="radio" checked> Medium
-                <input name="Platforms" type="radio"> High
-                <input name="Platforms" type="radio"> Critical
+                Bug Title: <input name="BugTitle" type="text">
             </label>
 
-            <label> <!--check if bugged-->
-                Platforms: <input name="Platforms" type="checkbox"> Low
-                <input name="Platforms" type="checkbox"> Medium
-                <input name="Platforms" type="checkbox"> High
-                <input name="Platforms" type="checkbox"> Critical
+            <br><br>
+
+            <input name="Severity" id="low" type="radio"> <label for="low">Low</label>
+            <input name="Severity" id="medium" type="radio" checked> <label for="medium">Medium</label>
+            <input name="Severity" id="high" type="radio"> <label for="high">High</label>
+            <input name="Severity" id="critical" type="radio"> <label for="critical">Critical</label>
+
+            <br><br>
+
+            Platforms:
+            <input name="Platforms" id="windows" type="checkbox"> <label for="windows">Windows</label>
+            <input name="Platforms" id="linux" type="checkbox"> <label for="windows">Linux</label>
+            <input name="Platforms" id="macos" type="checkbox"> <label for="macos">MacOs</label>
+            <input name="Platforms" id="android" type="checkbox"> <label for="android">Android</label>
+            <input name="Platforms" id="ios" type="checkbox"> <label for="ios">iOS</label>
+
+            <br><br>
+
+            <label for="Browser">Browser: </label>
+            <select id="Browser" name="Browser">
+                <option value="Chrome" selected>Chrome</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Edge">Edge</option>
+                <option value="Safari">Safari</option>
+            </select>
+
+            <br><br>
+
+            <label> Programming Language:
+                <input type="text" name="ProgrammingLanguages" list="Languages">
+                <datalist id="Languages">
+                    <option value="C">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="JavaScript">
+                    <option value="PHP">
+                </datalist>
+                </input>
             </label>
 
-            <!--to do browser and down-->
+            <br><br>
 
+            <label for="Steps2Repro">Steps to Reproduce:</label><br>
+            <textarea name="Steps2Repro" id="Steps2Repro" rows="6" cols="60"></textarea>
+
+            <br><br>
+
+            <label>Date found:
+                <input type="date" name="Date">
+            </label>
         </fieldset>
+
+        <p>
+            <input type="submit" formnovalidate>
+            <input type="reset">
+        </p>
     </form>
 </body>
 
