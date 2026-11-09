@@ -31,6 +31,8 @@ int main() {
     it is dynamically allocated as he enters the size
     */
 
+   // 1D ARRAY POINTER WILL BE IN PARTIALS
+
     char *pGrades = nullptr; // or less preferably, NULL
     int size;
     
