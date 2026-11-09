@@ -26,7 +26,7 @@ print(seasons[1][0])
 print(seasons[1:2])
 
 # error (3 is out of bounds)
-print(seasons[0][3])
+# print(seasons[0][3])
 
-months = [seasons[0][0], seasons[3],[2]]
+months = [seasons[0][0], seasons[3][2]]
 print(months)

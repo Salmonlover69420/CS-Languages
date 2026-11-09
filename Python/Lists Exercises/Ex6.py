@@ -1,6 +1,7 @@
 # Write a program that declares a list and then asks the user to provide the indices of 3 elements to remove from the list. 
 # The provided indices must be checked for out of range errors. 
 # The final list is displayed on the screen.
+
 def main(): 
     nb = [1, -2, 3, 6, 7, 23, 7, 23, 8] # 8 elements
 
@@ -20,7 +21,7 @@ def main():
 
     SortedIndeces = [index1, index2, index3]
     SortedIndeces.sort()
-    SortedIndeces.reverse()
+    SortedIndeces.reverse() # or just do SortedIndeces.sort(reverse = true) in previous line
     # print(SortedIndeces) # outputs SortedIndeces in decreasing order
 
     nb.pop(SortedIndeces[0])

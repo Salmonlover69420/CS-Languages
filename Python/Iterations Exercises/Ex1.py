@@ -32,3 +32,12 @@ for day in week:
         print( f"{day}: Finally, the weekend!")
 
 print()
+
+# Method 4:
+for i in week:
+    if i == 'Monday':
+        print(i, ":Back to Work!")
+    elif i == 'Saturday' or i == 'Sunday':
+        print(i, ": Finally! The weekend")
+    else:
+        print(i, ": Working Day")
