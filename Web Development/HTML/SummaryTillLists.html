@@ -4,11 +4,10 @@
 <head>
     <title>title</title>
     <meta charset="utf-8">
-    <meta name="desc" content="u use this and other meta tags for search engine optimization">
+    <meta name="desc" content="u use this and other meta tags (author, keywords) for search engine optimization">
     <meta name="author" content="author name">
     <meta name="keywords" content="html lecture, learn HTML">
     <meta name="viewport" content="width=device width, initial scale=1.0">
-    <style></style>
 </head>
 
 <body>
@@ -29,21 +28,38 @@
     <p>An example of <sub>subscripted Text</sub> </p>
     <p>An example of <del>struckthrough Text</del></p>
     <p>An example of <code>Computer Code Text</code></p>
-    <center>Centering of <mark> text </mark> in page</center>
+    <center>Centering of <mark> text </mark> in page</center> <!--mark highlights in yellow-->
 
-    <hr width="500" align="left"><br>
+    
+    <!-- Special Characters: -->
+    <p>Ampersand &amp;</p>
+    <p>Greater than &gt;</p>
+    <p>Less than &lt;</p>
+    <p>Double quote &quot;</p>
+    <p>Copyright mark &copy;</p>
+    <p>Registered trademark &reg;</p>
+    <p>Space &nbsp;</p>
 
-    <ul type="square"> <!--square, disc, circle, etc-->
+    <hr width="500" align="left"><br> <!-- Self-closing tags (known as void/empty elements) since they do not require a closing tag </> -->
+    
+    
+    <!-- Lists -->
+
+    <!-- Unordered List -->
+    <ul type="square"> <!-- Types: square, disc, circle, etc-->
         <li>a</li>
         <li>b</li>
         <li>c</li>
     </ul>
-    <ol> <!--adding start="" makes the list start at that number, can also use alphabet or roman numerals-->
+    
+    <!-- Ordered list -->
+    <ol> <!--adding start="" makes the list start at that number, can also use alphabet (type="a" or "A") or roman numerals (type="i" or I)-->
         <li>a</li>
         <li>b</li>
         <li>c</li>
     </ol>
-
+    
+    <!-- Description List -->
     <dl>
         <dt>title</dt>
         <dd>desc</dd>
@@ -55,10 +71,15 @@
 
     <hr width="500" align="left"><br>
 
+    
+    <!-- Links -->
+
     <a href="https://www.google.com">google</a><br>
-    <a href="https://www.google.com" target=_blank>google blank page (opens in new window/tab)</a><br>
+    <a href="https://www.google.com" target="_blank">google blank page (opens in new window/tab due to the target=_blank)</a><br>
+    <a href ="mailto:test@gmail.com"> email </a>
     <a href="p2.html"> go to page 2</a><br>
 
+    <!-- Internal linking -->
     <a href="#h1ID">go to <em>h1</em></a><br> <!--goes to h1-->
     <a href="#pid">go to first paragraph</a><br>
 
