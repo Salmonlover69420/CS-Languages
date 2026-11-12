@@ -11,20 +11,20 @@ typedef vector<vi> mi;
 //         for (int j = 0; j < m[i].size(); j++) {
 //             cout << m[i][j] << " ";
 //         }
-//         cout << endl;
+//         cout << '\n';
 //     }
 // }
 
-void display(mi& m) { // like commented one up above but auto instead of iterative loops
+void display(mi &m) { // like commented one up above but auto instead of iterative loops
     for (auto x : m) { // selects row
         for (auto y : x) { // checks each element of the row
             cout << y << " "; // ends up printing the matrix
         }
-        cout << endl;
+        cout << '\n';
     }
 }
 
-void coloring(mi& m, int i, vi& color);
+void coloring(mi &m, int i, vi &color);
 
 int main() {
     int n = 4; // number of elements in the color vector
@@ -59,21 +59,21 @@ int main() {
 
     // below, prints color vector
     for (auto x : color) {
-        cout << x << " " << '\n'; 
+        cout << x << " " << '\n';
     }
 
     return 0;
 }
 
-void coloring(mi& m, int i, vi& color) { // i is the vertex to color, vi& color is the vector that stores the aligned colors
+void coloring(mi &m, int i, vi &color) { // i is the vertex to color, vi& color is the vector that stores the aligned colors
     bool valid;
     for (int k = 0; k < m.size(); k++) { // checks whether each color (from 0 to 3) can be used for vertex i (doesnt assign color yet)
         valid = true; // assumes color k is valid
         for (int j = 0; j < m.size(); j++) { // checks vertex j to see if its connected to vertex i
             if (m[i][j] != 0 && color[j] == k) {  // checks if i is connected to j && if j already has color we're trying to use
                 // if both conditions above are true, color cant be assigned to vertex i and the if loop is exited from
-                valid = false; 
-                break; 
+                valid = false;
+                break;
             }
         }
         if (valid) { // checks if no neighbor has color k

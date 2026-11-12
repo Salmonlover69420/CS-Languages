@@ -29,3 +29,13 @@ def ListComp(lista, listb):
     return False
 
 main()
+
+# Can also input list as such and continue:
+# def main():
+#     List1 = input("Enter the elements of the first list: ").split()
+#     List2 = input("Enter the elements of the second list: ").split()
+
+#     if Common(List1, List2):
+#         print("The lists have common elements.")
+#     else:
+#         print("The lists have no common elements.")
