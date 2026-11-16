@@ -38,6 +38,7 @@ int main() {
     delete[] pArray;
     pArray = nullptr;
 
+    return 0;
 }
 
 int BinarySearch(const int *Array, int low, int high, int x) {
