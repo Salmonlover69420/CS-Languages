@@ -1,51 +1,47 @@
-import random as r
 import math as m
+import random as r
 import time as t
 
+LowerBound = 0
 
-def main():
-    LowerBound = 0
+N = int(input("Enter an upper positive bound: "))
+while N <= 0:
+  N = int(input("Enter an upper positive bound: "))
 
-    N = -1
-    while N <= 0:
-        N = int(input("Enter an upper positive bound: "))
-        if N <= 0:
-            print("Upper bound must be positive")
+MinNbTrials = m.ceil(m.log2(N - LowerBound + 1))
+n = r.randint(LowerBound, N)
 
-    n = r.randint(LowerBound, N)
+StartTime = t.time()
+x = int(input("Choose a number: "))
+NbTrials = 1
 
-    StartTime = t.time()
-    rounds = 0
-    MinNbTrials = round(m.log2(N - LowerBound + 1))
+while x != n:
+  if x > n:
+    print("Try again, too large!")
+  else:
+    print("Try again, too small!")
+  x = int(input("Choose a number: "))
+  NbTrials += 1
 
-    a = -1
-    while a != n:
-        a = int(input("Choose a number: "))
-        rounds += 1
+EndTime = t.time()
+TimeTaken = EndTime - StartTime
 
-        if a < n:
-            print("Try again, too small!")
-        elif a > n:
-            print("Try again, too large!")
-        else:
-            print("Congratulations, you won!")
+print("Congratulations, you won!")
+print(
+    f"It took you {NbTrials} rounds and {TimeTaken:.2f} seconds to guess the"
+    " number"
+)
+print(f"Minimum number of trials to guess the nb = {MinNbTrials}")
 
-    FinalTime = t.time()
-    Time = round(FinalTime - StartTime, 2)
-
-    print(f"It took you {rounds} rounds and {Time} seconds to guess the number")
-    print(f"Minimum number of trials to guess the nb = {MinNbTrials}")
-
-    if rounds <= MinNbTrials:
-        print("Score: Excellent!")
-    elif rounds <= MinNbTrials + 3:
-        print("Score: Very good")
-    elif rounds <= MinNbTrials + 5:
-        print("Score: Good")
-    elif rounds <= MinNbTrials + 7:
-        print("Score: Not bad")
-    else:
-        print("You should try harder next time!")
-
-
-main()
+match NbTrials:
+  case _ if NbTrials <= MinNbTrials:
+    print("Score: Excellent!")
+  case _ if NbTrials <= MinNbTrials + 3:
+    print("Score: Very good!")
+  case _ if NbTrials <= MinNbTrials + 5:
+    print("Score: Good!")
+  case _ if NbTrials <= MinNbTrials + 7:
+    print("Score: Not bad!")
+  case _:
+    print("You should try harder next time!")
+    
