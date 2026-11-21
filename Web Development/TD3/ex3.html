@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <style>
+            button {
+                background-color: blue;
+                color: white;
+                font-size: 16px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 32px;
+                padding-right: 32px;
+                border: 0px;
+            }
+
+            button:hover {
+                cursor: hand;
+            }
+
+            .button {
+                background-color: blue;
+                color: white;
+                font-size: 16px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 32px;
+                padding-right: 32px;
+                border: 0px;
+            }
+
+            .OutlineButton {
+                background-color: white;
+                border-color: blue;
+                border: 2px solid blue;
+                color: blue;
+            }
+
+            .OutlineButton:hover {
+                background-color: blue;
+                color: white;
+            }
+
+            .ShadowButton {
+                box-shadow: 0 0 5px black;
+            }
+
+            .ShadowButton:hover {
+                font-size: 20px;
+            }
+
+            .DisabledButton {
+                opacity: 0.5;
+            }
+
+            .DisabledButton:hover {
+                cursor: not-allowed;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- DIFF WAYS OF MAKING THE SAME BUTTON -->
+        <h1>3 Different Ways</h1>
+        <input type="button" value="Click me"></input>
+        <button>Click me</button>
+        <button class="button">Click me</button>
+        <input type="button" class="button" value="Click me"></input>
+
+        <!-- COLORS -->
+        <h1>Colors</h1>
+        <button style="background-color: green">Green</button>
+        <button style="background-color: red">Red</button>
+        <button style="background-color: orange">Orange</button>
+        <button style="background-color: lightgray; color: black">Green</button>
+
+        <!-- SIZE -->
+        <h1>Size</h1>
+        <button style="font-size: 12px;">Small</button>
+        <button>Normal</button>
+        <button style="font-size: 22px;">Large</button>
+
+        <!-- Rounded Corners -->
+        <h1>Rounded Corners</h1>
+        <button style="border-radius: 4px;">4px</button>
+        <button style="border-radius: 12px;">12px</button>
+        <button style="border-radius: 100px;">Pill</button>
+
+        <!-- Outline, shadow and disabled -->
+        <h1>Outline, shadow and disabled</h1>
+        <button class="OutlineButton">aaa</button>
+        <button class="ShadowButton">aaa</button>
+        <button class="DisabledButton">aaa</button>
+    </body>
+</html>
