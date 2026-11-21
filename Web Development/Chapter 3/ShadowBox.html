@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Shadow box</title>
+        <style>
+            body {
+                margin-left: 40px;
+            }
+
+            /*
+                div.card means the class is in div tag, 
+                div .card means the class is inside ANY tag INSIDE a div 
+            */
+            div.card {
+                width: 250px;
+                text-align: center;
+                /* Or in div.text */
+                box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+            }
+
+            div.text {
+                background-color: #4CAF50;
+                color: white;
+                padding: 66px 10px;
+            }
+
+            div.text h1 {
+                margin: 0;
+                font-size: 80px;
+            }
+
+            div.title {
+                padding: 20px 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>My First Card</h1>
+        <div class="card">
+            <div class="text">
+                <h1>Hi</h1>
+            </div>
+            <div class="title">
+                Septembre 1, 2026
+            </div>
+        </div>
+    </body>
+</html>
