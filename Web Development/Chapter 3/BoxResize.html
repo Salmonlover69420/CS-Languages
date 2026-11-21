@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .column {
+                float: left;
+                width: 25%;
+                padding: 20px;
+            }
+
+            div .column {
+                background-color: lightblue;
+                border: 1px solid blue;
+            }
+
+            @media screen and (max-width: 992px) {
+                .column {
+                    width: 50%;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            <div class="column">
+                <p>text 1</p>
+            </div>
+            <div class="column">
+                <p>text 2</p>
+            </div>
+            <div class="column">
+                <p>text 3</p>
+            </div>
+            <div class="column">
+                <p>text 4</p>
+            </div>
+            <div class="column">
+                <p>text 5</p>
+            </div>
+        </div>
+    </body>
+</html>

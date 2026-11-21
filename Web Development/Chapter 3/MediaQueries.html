@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            @media all {
+                body {
+                    background-color: SteelBlue;
+                }
+
+                h1 {
+                    font-family: verdana, helvetica, sans-serif;
+                    color: PaleGreen;
+                }
+
+                p {
+                    font-size: 12pt;
+                    color: white;
+                    font-family: arial, sans-serif;
+                }
+            }
+
+            @media print { /* If you do the print page mode (when wanting to print a document) it will apply this instead of whats above */
+                body {
+                    background-color: white;
+                }
+
+                h1 {
+                    color: SeaGreen;
+                }
+
+                p {
+                    font-size: 14pt;
+                    color: SteelBlue;
+                    font-family: "times new roman", times, serif;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Media Types Example</h1>
+        <p>go to the Print menu and select Print Preview.</p>
+    </body>
+</html>
