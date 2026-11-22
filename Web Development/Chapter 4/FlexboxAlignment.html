@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            .flex {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .boxes {
+                background-color: pink;
+                width: 100px;
+                height: 100px;
+                border: aqua 2px solid;
+                text-align: center;
+            }
+
+            #container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap; /* Required for align-content to work */
+                width: 350px; /* Forces boxes 4 and 5 onto a second row */
+                height: 300px; /* Gives extra vertical space to distribute */
+                align-content: space-between; /* Pushes row 1 to the top, row 2 to the bottom */
+                border: 2px dashed gray; /* Helps visualize the container boundaries */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flex">
+            <div class="boxes">
+                <p>Box 1</p>
+            </div>
+            <div class="boxes">
+                <p>Box 2</p>
+            </div>
+            <div class="boxes">
+                <p>Box 3</p>
+            </div>
+            <div class="boxes">
+                <p>Box 4</p>
+            </div>
+            <div class="boxes">
+                <p>Box 5</p>
+            </div>
+        </div>
+
+        <div id="container">
+            <div class="boxes">
+                <p>Box 1</p>
+            </div>
+            <div class="boxes">
+                <p>Box 2</p>
+            </div>
+            <div class="boxes">
+                <p>Box 3</p>
+            </div>
+            <div class="boxes">
+                <p>Box 4</p>
+            </div>
+            <div class="boxes">
+                <p>Box 5</p>
+            </div>
+        </div>
+    </body>
+</html>

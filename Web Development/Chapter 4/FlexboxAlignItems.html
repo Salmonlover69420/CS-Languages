@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            .boxes {
+                background-color: pink;
+                width: 70px;
+                height: 70px;
+                border: aqua 2px solid;
+                text-align: center;
+            }
+
+            #container {
+                display: flex;
+                flex-direction: row;
+                height: 200px;
+                align-items: center;
+                /* flex-start, flex-end, center, baseline, stretch */
+                justify-content: center;
+                /* To also center is horizontally instead of just vertically */
+                border: 5px solid green;
+            }
+
+            .box4 {
+                align-self: flex-end; /* flex-start, flex-end, center, baseline, stretch */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div class="boxes">
+                <p>Box 1</p>
+            </div>
+            <div class="boxes">
+                <p>Box 2</p>
+            </div>
+            <div class="boxes">
+                <p>Box 3</p>
+            </div>
+            <div class="boxes box4">
+                <p>Box 4</p>
+            </div>
+            <div class="boxes">
+                <p>Box 5</p>
+            </div>
+        </div>
+    </body>
+</html>
