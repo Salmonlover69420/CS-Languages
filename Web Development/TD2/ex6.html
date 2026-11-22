@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <head>
+            <style>
+                a {
+                    text-decoration: none;
+                    display: block;
+                    width: fit-content; /* Optional, just so that you cant click link all the way from the right */
+                }
+
+                a:visited {
+                    color: purple;
+                }
+
+                a:hover {
+                    color: red;
+                    text-decoration: solid;
+                }
+
+                a:active {
+                    color: orange;
+                }
+
+                p {
+                    display: block;
+                    width: 0px; /* Forces each word down a new line, not good if background has color or border */
+                }
+
+                .hidden {
+                    display: none;
+                }
+
+                div.box {
+                    height: 120px;
+                    width: 60px;
+                    background-color: lightblue;
+                    border: 1px solid blue;
+                    display: inline-block;
+                }
+            </style>
+        </head>
+    </head>
+
+    <body>
+        <a href="google.com">a</a>
+        <a href="google.com">b</a>
+        <a href="google.com">c</a>
+
+        <p>
+            hello bye cya
+        </p>
+
+        <p class="hidden">hidden</p>
+
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </body>
+</html>
