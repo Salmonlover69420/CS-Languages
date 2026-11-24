@@ -18,9 +18,9 @@ struct Edge {
 void AddEdge(Matrix &a, Edge e);
 bool IsEdge(Matrix &a, Edge e);
 void RemoveEdge(Matrix &a, Edge e);
-void RandomGraph(Matrix &a, int m);
-Matrix RandomGraph(int m); // hw to do: declare Matrix a(n, vi(n, 0)) inside Matrix RandomGraph() and do fct
-void ReadGraph(Matrix &a, int m);
+void RandomGraph(Matrix &a, int NbEdges);
+Matrix RandomGraph(int NbEdges); // hw to do: declare Matrix a(NbVertices, vi(NbVertices, 0)) inside Matrix RandomGraph() and do fct
+void ReadGraph(Matrix &a, int NbEdges);
 void Display(Matrix &a);
 int Degree(Matrix &a, int u);
 vi DegreeVector(Matrix &a);
@@ -28,11 +28,11 @@ vi Neighbors(Matrix &a, int u);
 
 
 int main() {
-    int n = 4, m = 4; // n: nb of vertices, m: nb of edges
+    int NbVertices = 4, NbEdges = 4; // NbVertices: nb of vertices, NbEdges: nb of edges
 
-    Matrix a(n, vi(n, 0)); // create 4x4 matrix filled with 0s (Note: a zero means no edge connects those two vertices)
+    Matrix a(NbVertices, vi(NbVertices, 0)); // create 4x4 matrix filled with 0s (Note: a zero means no edge connects those two vertices)
 
-    RandomGraph(a, m); // Generates 4 random edges
+    RandomGraph(a, NbEdges); // Generates 4 random edges
     /* Example:
         0 1 5
         0 2 8
@@ -40,7 +40,7 @@ int main() {
         2 3 10
     */
 
-    ReadGraph(a, m); // Asks user to input 4 more edges (fct rejects ones already generated in RandomGraph(), so input unique ones)
+    ReadGraph(a, NbEdges); // Asks user to input 4 more edges (fct rejects ones already generated in RandomGraph(), so input unique ones)
 
     Display(a);
 
@@ -82,15 +82,15 @@ void RemoveEdge(Matrix &a, Edge e) {
     // thus removing connection between both vertices
 }
 
-void RandomGraph(Matrix &a, int m) { // m = nb of edges. This is a weighted graph
+void RandomGraph(Matrix &a, int NbEdges) { // NbEdges = nb of edges. This is a weighted graph
     Edge e; // Create Edge var
-    int n = a.size(); // Gets nb of rows in the matrix (in this case 4 since we made a 4x4 matrix)
+    int NbVertices = a.size(); // Gets nb of rows in the matrix (in this case 4 since we made a 4x4 matrix)
 
-    for (int i = 0; i < m; ) { // Runs until we addess m edges succesfully, NO i++ HERE, WRITE AFTER
+    for (int i = 0; i < NbEdges; ) { // Runs until we addess NbEdges edges succesfully, NO i++ HERE, WRITE AFTER
         // Can use srand(time(0)) instead of rand() to make it random each time after running
-        // Generates two random vertex nbs (possible values are 0, 1, 2, 3 since n = 4):
-        e.u = rand() % n;
-        e.v = rand() % n;
+        // Generates two random vertex nbs (possible values are 0, 1, 2, 3 since NbVertices = 4):
+        e.u = rand() % NbVertices;
+        e.v = rand() % NbVertices;
 
         e.w = rand() % 100 + 1; // So that the random weight cant be 0, generates a random weight between 1 and 100
 
@@ -103,17 +103,17 @@ void RandomGraph(Matrix &a, int m) { // m = nb of edges. This is a weighted grap
     }
 }
 
-Matrix RandomGraph(int m) {
+Matrix RandomGraph(int NbEdges) {
     // TODO
     return Matrix();
 }
 
-void ReadGraph(Matrix &a, int m) { // User manually inputs edges
+void ReadGraph(Matrix &a, int NbEdges) { // User manually inputs edges
     Edge e;
-    int n = a.size();
+    int NbVertices = a.size();
     cout << "Input (u, v, w) edges: " << '\n';
 
-    for (int i = 0; i < m; ) {
+    for (int i = 0; i < NbEdges; ) {
         cin >> e.u >> e.v >> e.w;
 
         /* Example of input:
@@ -123,8 +123,8 @@ void ReadGraph(Matrix &a, int m) { // User manually inputs edges
             2 3 10
         */
 
-        // (can also put as >= n instead of > n - 1 in the if condition below)
-        if (e.u < 0 || e.v < 0 || e.u > n - 1 || e.v > n - 1 || e.u == e.v || IsEdge(a, e)) // Reject negative vertex nbs, vertex nbs > n-1, edges connecting vertex to itself, edges that already exist
+        // (can also put as >= NbVertices instead of > NbVertices - 1 in the if condition below)
+        if (e.u < 0 || e.v < 0 || e.u > NbVertices - 1 || e.v > NbVertices - 1 || e.u == e.v || IsEdge(a, e)) // Reject negative vertex nbs, vertex nbs > NbVertices-1, edges connecting vertex to itself, edges that already exist
             continue;
 
         AddEdge(a, e);
