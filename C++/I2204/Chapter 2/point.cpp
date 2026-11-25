@@ -1,7 +1,6 @@
-// ConsoleApplication29.cpp : Defines the entry point for the console application.
-// Consider the structure point containing the coordinates of a point x and y.
-// Write a function sum that inputs two variables of type point and that returns a variable of type point that is the sum of the two points.Write the program that tests this function
-
+/* Consider the structure point containing the coordinates of a point x and y.
+	Write a function sum that inputs two variables of type point and that returns a variable of type point that is the sum of the two points.Write the program that tests this function
+*/
 #include <iostream>
 
 using namespace std;

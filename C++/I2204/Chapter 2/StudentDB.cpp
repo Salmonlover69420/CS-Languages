@@ -1,9 +1,3 @@
-// know difference between: 
-// cin >> var; => Reads one word/value, stops at space, stores '\n' in buffer (Input: John Doe -> Takes: John)
-// cin.getline(Object.var, Size, '\n') => Reads up to Size-1, including white space (dont use "\n" (string literal) use '\n' (a character))
-// getline(cin, var) reads entire line, including white space, doesnt require size
-// cin.ignore(INT_MAX, '\n') discards input stored in buffer (ex: Doe from cin >> var) so that it doesnt carry over to the next input
-
 #include <iostream>
 #include <iomanip>
 #include <cstring>
@@ -73,6 +67,7 @@ int main() {
             index = i; // takes the index in the array and stores it for later use (to print out the info of the student)
             break;
         }
+
     if (found) {
         cout << setw(20) << tab[index].firstName << setw(20) << tab[index].lastName << setw(30) << tab[index].address << setw(10) << tab[index].age << tab[index].gpa << endl;
     }

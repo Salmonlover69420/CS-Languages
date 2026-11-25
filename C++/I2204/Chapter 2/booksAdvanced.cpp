@@ -1,11 +1,11 @@
 /*
-A book is defined by:
-Title, Author, Editor, Edition, and Cost
-Write a program that inputs the data relative to N books and displays on the screen a menu offering the following choices:
-1 - Display the titles of all the books written by a given author (Ask the user to input the author name)
-2 - Output the total cost of the books
-3 - Output the books of edition = 2
-4 - Exit
+    A book is defined by:
+    Title, Author, Editor, Edition, and Cost
+    Write a program that inputs the data relative to N books and displays on the screen a menu offering the following choices:
+    1 - Display the titles of all the books written by a given author (Ask the user to input the author name)
+    2 - Output the total cost of the books
+    3 - Output the books of edition = 2
+    4 - Exit
 */
 
 #include <iostream>
@@ -39,15 +39,16 @@ int main() {
     int choice;
     do {
         choice = Menu();
+        
         switch (choice) {
-        case 1: ShowByAuthor(N, Book);
-            break;
-        case 2: TotalCost(N, Book);
-            break;
-        case 3: Edition(N, Book);
-            break;
-        case 4:
-            break;
+            case 1: ShowByAuthor(N, Book);
+                break;
+            case 2: TotalCost(N, Book);
+                break;
+            case 3: Edition(N, Book);
+                break;
+            case 4:
+                break;
         }
     } while (choice != 4);
 

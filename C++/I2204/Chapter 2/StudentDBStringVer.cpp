@@ -1,9 +1,3 @@
-// know difference between: 
-// cin >> var; => Reads one word/value, stops once it sees a space (Input: John Doe -> Stores: John)
-// cin.getline(Object.var, Size, '\n' ) (dont use "\n" (string literal) use '\n' (a character) ) => does not stop at white space and takes size number of characters inputted
-// getline(cin, var) puts entire line inside a string, doesnt need a buffer size
-// cin.ignore(INT_MAX) discards input stored in buffer (ex: Doe from cin >> var) so that it doesnt carry over to the next input
-
 // STRING VER INSTEAD OF USING CHAR DATATYPES (string lastName instead of char lastName[20], etc etc)
 
 #include <iostream>
