@@ -1,6 +1,6 @@
 /*
-Implement Hakimi-Havel algorithm using the C++ language. 
-Execute your program and verify that the previous problem proposition is true.
+    Implement Hakimi-Havel algorithm using the C++ language. 
+    Execute your program and verify that the previous problem proposition is true.
 */
 
 #include <iostream>
