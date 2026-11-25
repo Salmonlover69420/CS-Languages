@@ -2,12 +2,14 @@
 Write a recursive function that displays an array of n characters
 */
 #include <iostream>
+
 using namespace std;
 
 void display_it(char tab[], int n);
 void display_rec(char tab[], int n);
 
 int main() {
+
     char tab[100];
     int n;
 
