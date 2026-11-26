@@ -38,6 +38,7 @@ int main() {
     return 0;
 }
 
+// Generates Adj Matrix
 void GenerateGraph(int size, Matrix &M) {
     srand(time(0));
 
