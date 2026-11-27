@@ -3,26 +3,23 @@
 using namespace std;
 
 int main() {
-    double x = 1.01;
-    double *p = &x;
-    double *q = p + 5;
+    // a. An array of 8 floats
+    float a[8];
 
-    int a[32] = {0};
+    // b. An array of 8 pointers to float ([] binds tighter than *)
+    float *b[8];
 
-    cout << *p << '\n';
+    // c. A pointer to an array of 8 floats (parentheses bind * to c first)
+    float (*c)[8];
 
-    cout << *q << '\n' << '\n';
+    // d. A pointer to an array of 8 pointers to float
+    float *(*d)[8];
 
-    cout << i[a]; // *(a + i) = *(i + a)
+    // e. A function that returns a float
+    float e();
 
-    // 3, c:
-    float *v;
-    v = new float[8];
-    // d:
-    float **v2;
-    v2 = new float*[8];
-    // for (int ) // continue
-
+    // f. A function that returns a pointer to a float (() binds tighter than *)
+    float *f();
 
     return 0;
 }

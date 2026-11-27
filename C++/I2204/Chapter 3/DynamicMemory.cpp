@@ -1,8 +1,8 @@
 /*
-'new' operator is used to allocate memory in heap instead of stack.
-Useful if dont how much memory is needed.
-Adds flexibility to the program.
-Use 'del' (and reset ptr to nullptr)
+    'new' operator is used to allocate memory in heap instead of stack.
+    Useful if dont how much memory is needed.
+    Adds flexibility to the program.
+    Use 'del' (and reset ptr to nullptr)
 */
 
 #include <iostream>
@@ -22,13 +22,13 @@ int main() {
     // When you're done with the memory space (after creating with new and using it), delete it.
 
     delete pNum; // releases the dynamically allocated memory previously obtained using new, to avoid memory leaks
-    pNum = nullptr; // Resets the pointer so it doesn't hold the old address
+    // pNum = nullptr; // Resets the pointer so it doesn't hold the old address (NOT NEEDED FOR THIS COURSE)
 
 
     // Example:
     /* 
-    instead of arbitrarily putting it as char pGrades[100] (100 for example) then asking user to input size, 
-    it is dynamically allocated as he enters the size
+        instead of arbitrarily putting it as char pGrades[100] (100 for example) then asking user to input size, 
+        it is dynamically allocated as he enters the size
     */
 
    // 1D ARRAY POINTER WILL BE IN PARTIALS
@@ -51,7 +51,7 @@ int main() {
     }
 
     delete[] pGrades;
-    pGrades = nullptr; // or less preferably, NULL
+    // pGrades = nullptr; // or less preferably, NULL (NOT NEEDED FOR THIS COURSE)
 
     // Note: for the example above, the best way is by using vectors instead of char and dynamic memory
 
